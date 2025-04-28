@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Certificate Generator</title>
+</head>
+<body>
+    <h1>Certificate Generator</h1>
+    <form method="POST" action="/generate">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event" required>
+        <br>
+        <button type="submit">Generate Certificate</button>
+    </form>
+</body>
+</html>
+
+
+<form action="/upload_csv" method="POST" enctype="multipart/form-data">
+    <label for="csv_file">Upload CSV File:</label>
+    <input type="file" id="csv_file" name="csv_file" accept=".csv" required>
+    <button type="submit">Process CSV</button>
+</form>

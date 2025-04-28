@@ -1,2 +1,2 @@
 # cer_gen
-certificate generater
+# certificate generater
